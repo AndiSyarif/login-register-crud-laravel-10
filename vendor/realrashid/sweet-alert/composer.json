@@ -1,0 +1,59 @@
+{
+    "name": "realrashid/sweet-alert",
+    "type": "library",
+    "description": "Laravel Sweet Alert Is A Package For Laravel Provides An Easy Way To Display Alert Messages Using The SweetAlert2 Library.",
+    "keywords": [
+        "laravel",
+        "laravel-package",
+        "sweet-alert2",
+        "sweet-alert",
+        "notifier",
+        "toast",
+        "noty",
+        "alert"
+    ],
+    "homepage": "https://github.com/realrashid/sweet-alert",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rashid Ali",
+            "email": "realrashid05@gmail.com",
+            "homepage": "https://realrashid.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "realrashid05@gmail.com",
+        "issues": "https://github.com/realrashid/sweet-alert/issues",
+        "source": "https://github.com/realrashid/sweet-alert",
+        "docs": "https://realrashid.github.io/sweet-alert/"
+    },
+    "require": {
+        "php": "^7.2|^8.0|^8.1",
+        "laravel/framework": "^5.6|^6.0|^7.0|^8.0|^9.0|^9.11|9.14.*|^10.0"
+    },
+    "require-dev": {
+        "symfony/thanks": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RealRashid\\SweetAlert\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RealRashid\\SweetAlert\\SweetAlertServiceProvider"
+            ],
+            "aliases": {
+                "Alert": "RealRashid\\SweetAlert\\Facades\\Alert"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
